@@ -35,7 +35,7 @@ api/
 ## Database
 Acesse o PostgreSQL como usuário postgres:
 
-sudo -u postgres psql
+* sudo -u postgres psql *
 
 Crie o banco de dados abrahao:
 
