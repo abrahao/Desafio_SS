@@ -7,6 +7,17 @@
 ## Requirements
 
 ## Installation
+1. Clone the repository and enter in the directory:
+
+   ```bash
+   git clone 
+   cd api
+
+2. Install dependencies:
+
+   ```bash
+   composer install
+   
 ## Running the API
 You can run the API using a PHP built-in server. From the `api` directory, execute the following command:
 
