@@ -42,6 +42,9 @@ Access PostgreSQL as the `postgres` user:
 
 * `sudo -i -u postgres`
 
+Navigate to the api directory:
+* `cd /home/<your-user>/path/to/api/`
+
 Create database `abrahao`:
 * `createdb abrahao`
 
