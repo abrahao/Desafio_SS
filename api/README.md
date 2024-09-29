@@ -35,6 +35,11 @@ api/
 
 ## Running the API
 
+You can run the API using a PHP built-in server. From the api directory, execute the following command:
+
+   ```bash
+php -S localhost:8000
+
 ## Endpoints
 ### User Registration
 
