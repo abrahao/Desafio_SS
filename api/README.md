@@ -50,7 +50,7 @@ Restore the database from an SQL file:
 ## Running the API
 You can run the API using a PHP built-in server. From the `api` directory, execute the following command:
 
-* php -S localhost:8000`
+* `php -S localhost:8000`
 
 
 ## Endpoints 
