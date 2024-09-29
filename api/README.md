@@ -11,7 +11,7 @@ This project is a RESTful API built with PHP, utilizing JWT (JSON Web Tokens) fo
 
 ## Project Structure
 
-api/
+API
 
 ## Requirements
 
@@ -21,58 +21,8 @@ api/
 
 ## Installation
 
-1. **Clone the repository:**
-   
+1. Clone the repository:
+
    ```bash
    git clone <repository-url>
    cd api
-   Install dependencies:
-   ```
-
-bash
-Copiar código
-composer install
-Set up environment variables:
-
-Running the API
-You can run the API using a PHP built-in server. From the api directory, execute the following command:
-
-bash
-php -S localhost:8000
-The API will be accessible at http://localhost:8000.
-
-Endpoints
-User Registration
-URL: /register
-Method: POST
-Body:
-json
-Copiar código
-{
-"name": "User Name",
-"email": "user@email.com",
-"password": "password"
-}
-User Login
-URL: /login
-Method: POST
-Body:
-json
-{
-"email": "user@email.com",
-"password": "password"
-}
-User Logout
-URL: /logout
-Method: POST
-Authorization: Bearer token required.
-Protected Endpoint
-URL: /protected-endpoint
-Method: GET
-Authorization: Bearer token required.
-Token Validation
-URL: /validate-token
-Method: POST
-Authorization: Bearer token required.
-License
-
