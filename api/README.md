@@ -23,7 +23,7 @@ This project is a RESTful API built with PHP, utilizing JWT (JSON Web Tokens) fo
 1. Clone the repository and enter in the directory:
 
    ```bash
-   git clone 
+   git clone (clone the project)
    cd api
 
 2. Install dependencies:
