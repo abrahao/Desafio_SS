@@ -34,6 +34,10 @@ api/
 
 ## Database
 
+Change system user directory access permission to postgres user:
+
+* `sudo chmod o+rx /home/<your-user>`
+
 Access PostgreSQL as the `postgres` user:
 
 * `sudo -i -u postgres`
