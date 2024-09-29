@@ -24,7 +24,7 @@ api/
 1. Clone the repository and enter in the directory:
 
    ```bash
-   git clone 
+   git clone [Clone the project]
    cd api
 
 2. Install dependencies:
