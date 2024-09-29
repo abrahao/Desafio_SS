@@ -48,10 +48,6 @@ Navigate to the api directory:
 Create database `abrahao`:
 * `createdb abrahao`
 
-Access PostgresSQL:
-
-* `psql`
-
 Restore the database from an SQL file:
 
 * `psql -U postgres -d abrahao -f abrahao.sql`
