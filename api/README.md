@@ -34,20 +34,6 @@ Copiar código
 composer install
 Set up environment variables:
 
-Create a .env file in the root directory and configure the following variables:
-
-dotenv
-Copiar código
-DB_HOST=your_database_host
-DB_NAME=your_database_name
-DB_USERNAME=your_database_username
-DB_PASSWORD=your_database_password
-DB_PORT=your_database_port
-JWT_SECRET=your_jwt_secret
-Create the database:
-
-Ensure you have a PostgreSQL database set up and create a users table with the necessary columns (name, email, password).
-
 Running the API
 You can run the API using a PHP built-in server. From the api directory, execute the following command:
 
