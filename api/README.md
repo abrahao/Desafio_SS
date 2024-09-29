@@ -57,7 +57,6 @@ You can run the API using a PHP built-in server. From the `api` directory, execu
 
 * `php -S localhost:8000`
 
-
 ## Endpoints 
 ### User Registration
 - **URL:** `/register`
