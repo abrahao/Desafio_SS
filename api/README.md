@@ -36,8 +36,7 @@ api/
 
 Access PostgreSQL as the `postgres` user:
 
- ```bash
- sudo -u postgres psql`
+* sudo -u postgres psql`
 
 Create the database `abrahao`:
 
