@@ -67,13 +67,13 @@ php -S localhost:8000
 - **URL:** `/logout`
 - **Method:** `POST`
 - **Authorization:** Bearer token required.
-- 
+
 ### Protected Endpoint
 
 - **URL:** `/protected-endpoint`
 - **Method:** `GET`
 - **Authorization:** Bearer token required.
-- 
+  
 ### Token Validation
 
 - **URL:** `/validate-token`
