@@ -34,18 +34,12 @@ api/
 
 ## Database
 Acesse o PostgreSQL como usuário postgres:
-``bash
-
 sudo -u postgres psql
 
 Crie o banco de dados abrahao:
-``bash
-
 createdb -U postgres abrahao
 
 Restaure o banco de dados a partir de um arquivo SQL:
-``bash
-
 psql -U postgres -d abrahao -f abrahao.sql
 
 ## Running the API
