@@ -36,8 +36,10 @@ api/
 
 Access PostgreSQL as the `postgres` user:
 
-* `sudo -u postgres psql`
+* `sudo -i -u postgres`
 
+Access PostgresSQL:
+* `psql`
 Create the database `abrahao`:
 
 * `createdb -U postgres abrahao`
