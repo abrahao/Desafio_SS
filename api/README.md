@@ -38,7 +38,7 @@ Access PostgreSQL as the `postgres` user:
 
 * `sudo -i -u postgres`
 
-Create databaseàbrahao`:
+Create database `abrahao`:
 * `createdb abrahao`
 
 Access PostgresSQL:
