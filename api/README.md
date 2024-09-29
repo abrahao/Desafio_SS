@@ -31,10 +31,16 @@ api/
 
    ```bash
    composer install
-   
+
+## Database
+1. Create database
+sudo -u postgres psql
+createdb -U postgres abrahao
+
+
 ## Running the API
 You can run the API using a PHP built-in server. From the `api` directory, execute the following command:
-
+   ```bash
 php -S localhost:8000
 
 ## Endpoints 
