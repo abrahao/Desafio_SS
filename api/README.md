@@ -45,12 +45,9 @@ Access PostgreSQL as the `postgres` user:
 Navigate to the api directory:
 * `cd /home/<your-user>/path/to/api/`
 
-Create database `abrahao`:
-* `createdb abrahao`
-
 Restore the database from an SQL file:
 
-* `psql -U postgres -d abrahao -f abrahao.sql`
+* `psql -U postgres -f abrahao.sql`
 
 Exit to the user `postgresSQL`
   * `exit`
