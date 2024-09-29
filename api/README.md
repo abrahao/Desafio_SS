@@ -53,7 +53,7 @@ Restore the database from an SQL file:
 Exit to the PostgresSql:
 * `\q`
 
-Exite to the user `postgresSQL`
+Exit to the user `postgresSQL`
   * `exit`
 
 ## Running the API
