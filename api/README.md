@@ -45,10 +45,6 @@ Access PostgresSQL:
 
 * `psql`
 
-Create the database `abrahao`:
-
-* `createdb -U postgres abrahao`
-
 Restore the database from an SQL file:
 
 * `psql -U postgres -d abrahao -f abrahao.sql`
