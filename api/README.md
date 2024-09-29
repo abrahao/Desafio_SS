@@ -50,6 +50,11 @@ Restore the database from an SQL file:
 
 * `psql -U postgres -d abrahao -f abrahao.sql`
 
+Exit to the PostgresSql:
+* `\q`
+
+Exite to the user `postgresSQL`
+  * `exit`
 
 ## Running the API
 You can run the API using a PHP built-in server. From the `api` directory, execute the following command:
