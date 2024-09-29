@@ -11,3 +11,17 @@ This project is a RESTful API built with PHP, utilizing JWT (JSON Web Tokens) fo
 
 ## Project Structure
 
+
+## Requirements
+
+- PHP 7.4 or higher
+- Composer
+- PostgreSQL database
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   cd api
