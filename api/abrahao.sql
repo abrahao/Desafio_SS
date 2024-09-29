@@ -17,6 +17,15 @@ SET client_min_messages = warning;
 SET row_security = off;
 
 --
+-- Create database abrahao
+--
+
+CREATE DATABASE abrahao;
+
+-- Connect to the new database
+\connect abrahao;
+
+--
 -- Name: pgcrypto; Type: EXTENSION; Schema: -; Owner: -
 --
 
@@ -28,7 +37,6 @@ CREATE EXTENSION IF NOT EXISTS pgcrypto WITH SCHEMA public;
 --
 
 COMMENT ON EXTENSION pgcrypto IS 'cryptographic functions';
-
 
 SET default_tablespace = '';
 
@@ -46,7 +54,6 @@ CREATE TABLE public.users (
     name character varying(100)
 );
 
-
 ALTER TABLE public.users OWNER TO postgres;
 
 --
@@ -61,7 +68,6 @@ CREATE SEQUENCE public.users_id_seq
     NO MAXVALUE
     CACHE 1;
 
-
 ALTER SEQUENCE public.users_id_seq OWNER TO postgres;
 
 --
@@ -70,13 +76,11 @@ ALTER SEQUENCE public.users_id_seq OWNER TO postgres;
 
 ALTER SEQUENCE public.users_id_seq OWNED BY public.users.id;
 
-
 --
 -- Name: users id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.users ALTER COLUMN id SET DEFAULT nextval('public.users_id_seq'::regclass);
-
 
 --
 -- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: postgres
@@ -126,4 +130,3 @@ ALTER TABLE ONLY public.users
 --
 -- PostgreSQL database dump complete
 --
-
