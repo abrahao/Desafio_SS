@@ -33,17 +33,19 @@ api/
    composer install
 
 ## Database
-Acesse o PostgreSQL como usuário postgres:
 
-* sudo -u postgres psql *
+Access PostgreSQL as the `postgres` user:
 
-Crie o banco de dados abrahao:
+* `sudo -u postgres psql`
 
-createdb -U postgres abrahao
+Create the database `abrahao`:
 
-Restaure o banco de dados a partir de um arquivo SQL:
+* `createdb -U postgres abrahao`
 
-psql -U postgres -d abrahao -f abrahao.sql
+Restore the database from an SQL file:
+
+* `psql -U postgres -d abrahao -f abrahao.sql`
+
 
 ## Running the API
 You can run the API using a PHP built-in server. From the `api` directory, execute the following command:
