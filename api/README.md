@@ -25,3 +25,9 @@ This project is a RESTful API built with PHP, utilizing JWT (JSON Web Tokens) fo
    ```bash
    git clone <repository-url>
    cd api
+Install dependencies:
+composer install
+
+Running the API
+You can run the API using a PHP built-in server. From the api directory, execute the following command:
+php -S localhost:8000
