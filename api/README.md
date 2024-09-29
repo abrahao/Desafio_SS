@@ -52,9 +52,6 @@ Restore the database from an SQL file:
 
 * `psql -U postgres -d abrahao -f abrahao.sql`
 
-Exit to the PostgresSql:
-* `\q`
-
 Exit to the user `postgresSQL`
   * `exit`
 
