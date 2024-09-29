@@ -1,8 +1,3 @@
-Here's a basic template for your README.md that explains your API and how to execute it. You can customize it further based on your project's specifics.
-
-markdown
-Copiar código
-
 # API Project
 
 This project is a RESTful API built with PHP, utilizing JWT (JSON Web Tokens) for authentication. It allows users to register, log in, and access protected resources.
@@ -17,44 +12,6 @@ This project is a RESTful API built with PHP, utilizing JWT (JSON Web Tokens) fo
 ## Project Structure
 
 api/
-
-├── composer.json
-
-├── composer.lock
-
-├── config
-
-│   └── Database.php
-
-├── controllers
-
-│   ├── AuthController.php
-
-│   └── UserController.php
-
-├── estrutura
-
-├── estrutura.md
-
-├── helpers
-
-│   └── Utils.php
-
-├── index.php
-
-├── middlewares
-
-│   └── JwtMiddleware.php
-
-├── models
-
-│   └── User.php
-
-├── services
-
-│   └── JwtService.php
-
-└── vendor
 
 ## Requirements
 
