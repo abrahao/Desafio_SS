@@ -1,6 +1,6 @@
 # Desafio_SS
 
-# Instruções
+## Instruções
 A API fornece os endpoints para serem consumidos.
 
 O modelo_I é um projeto React+Vite.
