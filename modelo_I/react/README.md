@@ -6,7 +6,7 @@ Modelo I do desafio. Feito em React+Vite.
 
 ...
 
-## Requirements
+## Requisitos
 
 Node 18 ou superior
 
