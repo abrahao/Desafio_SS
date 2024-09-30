@@ -10,7 +10,7 @@ Modelo I do desafio. Feito em React+Vite.
 
 Node 18 ou superior
 
-## Installation
+## Instalação
 
 1. Clone o repositório e entre no diretório:
 
