@@ -24,7 +24,7 @@ cd modelo_II/
 
 - `php -S localhost:8001 -t public/`
 
-2. Copie a URL e cole-o no navegador
+3. Copie a URL e cole-o no navegador
 
 
 ** Observação: 
