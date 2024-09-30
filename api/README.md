@@ -100,9 +100,13 @@ You can run the API using a PHP built-in server. From the `api` directory, execu
 - **Method:** `POST`
 - **Authorization:** Bearer token required.
 
-## Pre-registered username and passwords.
-Along with the files is the database dump with some pre-registered data. Some credentials:
+## Pre-registered username and passwords
 
-* `joao@mail.com:12345678`
+Along with the files is the database dump with some pre-registered data that can be used to test authentication in applications.
 
-* `maria@mail.com:876543211`
+Some credentials:
+`user:password inputs`
+
+`joao@mail.com:12345678`
+
+`maria@mail.com:87654321`
