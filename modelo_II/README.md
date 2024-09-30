@@ -6,6 +6,8 @@ Modelo II do desafio. Feito em PHP.
 
 PHP 7.4 ou superior.
 
+Postgres
+
 ## Instalação
 
 ```bash
