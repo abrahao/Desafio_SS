@@ -16,7 +16,7 @@ Node 18 ou superior
 
    ```bash
    git clone [clone o projeto]
-   cd modelo_II/
+   cd modelo_I/
 
    ```
 
