@@ -1,0 +1,84 @@
+.container {
+  font-size: 1.4rem;
+}
+
+.card {
+  max-width: 400px;
+  justify-content: center;
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    #f9f9f9,
+    #e0e0e0
+  ); /* Adiciona um gradiente sutil */
+  border: none; /* Remove a borda para um visual mais limpo */
+  border-radius: 15px; /* Aumenta o arredondamento dos cantos */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Suaviza e espalha a sombra para mais profundidade */
+}
+
+.conteudo {
+  margin-left: 30px;
+}
+
+img {
+  width: 200px; /* Define um tamanho fixo para a imagem */
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+.msg {
+  color: red;
+  text-align: center; /* Alinha o texto ao centro */
+  margin-left: -15px;
+}
+
+button {
+  width: calc(100% - 40px);
+  background-color: #4285f4; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  border-radius: 5px;
+  padding: 10px 20px; /* Aumenta o padding para um botão mais robusto */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Adiciona transição suave */
+}
+
+button:hover {
+  background-color: #357ae8; /* Cor de fundo ao passar o mouse */
+}
+
+input[type="email"],
+input[type="password"] {
+  width: calc(
+    100% - 40px
+  ); /* Faz os inputs ocuparem quase toda a largura disponível */
+  padding: 10px; /* Adiciona padding interno */
+  margin-bottom: 15px; /* Adiciona margem inferior */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+.icon {
+  position: absolute;
+  margin-left: -30px; /* Ajusta a posição do ícone */
+  margin-top: 8px; /* Ajusta a posição do ícone */
+  color: #888; /* Cor do ícone */
+}
+
+.recall-forget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.signup-link a {
+  color: #4285f4; /* Cor do link */
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline; /* Sublinhar ao passar o mouse */
+}
