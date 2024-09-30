@@ -34,4 +34,8 @@ Node 18 ou superior
 
 2. Copie um URL e cole-o no navegador
 
+** Observação: 
+Para a aplicação consumir a API é necessário esta estar em execução.
+
+
 ![Tela de login](login.png)
