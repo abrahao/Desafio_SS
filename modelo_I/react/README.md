@@ -2,7 +2,7 @@
 
 Modelo I do desafio. Feito em React+Vite.
 
-## Estrutua
+## Estrutura
 
 ...
 
@@ -15,8 +15,8 @@ Node 18 ou superior
 1. Clone o repositório e entre no diretório:
 
    ```bash
-   git clone [clone the project]
-   cd react
+   git clone [clone o projeto]
+   cd react/
 
    ```
 
