@@ -22,5 +22,6 @@ cd modelo_II/
 
 2. Copie a URL e cole-o no navegador
 
-** Onservação: 
+
+** Observação: 
 Para a aplicação consumir a API é necessário esta estar em execução.
