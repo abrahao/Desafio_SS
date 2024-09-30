@@ -3,7 +3,7 @@
 ## Instruções
 A API fornece os endpoints para serem consumidos.
 
-O modelo_I é um projeto desenvolvido em React+Vite.
+O modelo_I é um projeto desenvolvido em React + Vite.
 
 O modelo_II é um projeto desenvolvido em PHP + HTML + CSS + Bootstrap5.3, compatível com as versões 7.4 - 8.2 do PHP.
 
