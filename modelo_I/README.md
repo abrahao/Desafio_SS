@@ -16,7 +16,7 @@ Node 18 ou superior
 
    ```bash
    git clone [clone o projeto]
-   cd react/
+   cd modelo_II/
 
    ```
 
