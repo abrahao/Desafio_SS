@@ -21,3 +21,6 @@ cd modelo_II/
 - `php -S localhost:8001 -t public/`
 
 2. Copie a URL e cole-o no navegador
+
+** Onservação: 
+Para a aplicação consumir a API é necessário esta estar em execução.
