@@ -102,5 +102,7 @@ You can run the API using a PHP built-in server. From the `api` directory, execu
 
 ## Pre-registered username and passwords.
 Along with the files is the database dump with some pre-registered data. Some credentials:
-`joao@mail.com:12345678`
-`maria@mail.com:876543211`
+
+* `joao@mail.com:12345678`
+
+* `maria@mail.com:876543211`
