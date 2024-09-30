@@ -16,7 +16,11 @@ cd modelo_II/
 
 ## Executando o aplicativo
 
-1. Execute o comando:
+1. Instale as dependências:
+
+* `composer install`
+
+2. Execute o comando:
 
 - `php -S localhost:8001 -t public/`
 
