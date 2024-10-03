@@ -30,65 +30,30 @@ if ($requestMethod === 'OPTIONS') {
 }
 
 // Roteamento de requisições
-switch ($requestUri) {
-    case '/register':
-        if ($requestMethod === 'POST') {
-            $userController->register();
-        } else {
-            http_response_code(405);
-            echo json_encode(['message' => 'Método não permitido.']);
-        }
-        break;
+match ($requestUri) {
+    '/register' => $requestMethod === 'POST'
+    ? $userController->register()
+    : (http_response_code(405) && print (json_encode(['message' => 'Método não permitido.']))),
 
-    case '/login':
-        if ($requestMethod === 'POST') {
-            $authController->login();
-        } else {
-            http_response_code(405);
-            echo json_encode(['message' => 'Método não permitido.']);
-        }
-        break;
+    '/login' => $requestMethod === 'POST'
+    ? $authController->login()
+    : (http_response_code(405) && print (json_encode(['message' => 'Método não permitido.']))),
 
-    case '/logout':
-        if ($requestMethod === 'POST') {
-            $authController->logout();
-        } else {
-            http_response_code(405);
-            echo json_encode(['message' => 'Método não permitido.']);
-        }
-        break;
+    '/logout' => $requestMethod === 'POST'
+    ? $authController->logout()
+    : (http_response_code(405) && print (json_encode(['message' => 'Método não permitido.']))),
 
-    case '/protected-endpoint':
-        // Protege a rota com o middleware JWT
-        $jwtMiddlewareResponse = $jwtMiddleware->handle($_SERVER['REQUEST']);
-        if ($jwtMiddlewareResponse === false) {
-            // O middleware já enviou uma resposta, portanto não é necessário fazer nada aqui
-            exit();
-        }
+    '/protected-endpoint' => ($jwtMiddleware->handle($_SERVER['REQUEST']) === false)
+    ? exit()
+    : ($requestMethod === 'GET'
+        ? print (json_encode(['message' => 'Acesso permitido ao endpoint protegido.']))
+        : (http_response_code(405) && print (json_encode(['message' => 'Método não permitido.'])))),
 
-        if ($requestMethod === 'GET') {
-            echo json_encode(['message' => 'Acesso permitido ao endpoint protegido.']);
-        } else {
-            http_response_code(405);
-            echo json_encode(['message' => 'Método não permitido.']);
-        }
-        break;
-    case '/validate-token':
-        if ($requestMethod === 'POST') {
-            $jwtMiddlewareResponse = $jwtMiddleware->handle($_SERVER['REQUEST']);
-            if ($jwtMiddlewareResponse === false) {
-                // O middleware já enviou uma resposta
-                exit();
-            }
-            // Se o token for válido, retornamos uma resposta positiva
-            echo json_encode(['valid' => true]);
-        } else {
-            http_response_code(405);
-            echo json_encode(['message' => 'Método não permitido.']);
-        }
-        break;
-    default:
-        http_response_code(404);
-        echo json_encode(['message' => 'Endpoint não encontrado.']);
-        break;
-}
+    '/validate-token' => $requestMethod === 'POST'
+    ? ($jwtMiddleware->handle($_SERVER['REQUEST']) === false
+        ? exit()
+        : print (json_encode(['valid' => true])))
+    : (http_response_code(405) && print (json_encode(['message' => 'Método não permitido.']))),
+
+    default => (http_response_code(404) && print (json_encode(['message' => 'Endpoint não encontrado.'])))
+};
