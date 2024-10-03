@@ -43,13 +43,26 @@
             console.log('Data e hora de login:', loginTime); // Mostra a data/hora de login no console
         });
     </script>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Bem-vindo(a), <span id="username"></span>!</h1>
-    <p>Você está logado desde <span id="loginTime"></span>.</p>
-    <button type="button" class="btn btn-primary" onclick="logout()">Sair</button>
-
+    <div class="container">
+        <div class="card w-50">
+            <div class="card-body">
+                <h1>Bem-vindo(a), <span id="username"></span>!</h1>
+                <p>Você está logado desde <span id="loginTime"></span>.</p>
+                <button type="button" class="btn btn-danger" onclick="logout()">Sair</button>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
