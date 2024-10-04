@@ -29,19 +29,21 @@
         redirectToLoginIfNotAuthenticated();
 
         document.addEventListener("DOMContentLoaded", function () {
-            const username = localStorage.getItem("username"); // Recupera o nome do usuário do localStorage
+            const username = localStorage.getItem("username");
             const loginTime = localStorage.getItem("loginTime");
 
             if (username) {
-                document.getElementById("username").textContent = username; // Exibe o nome do usuário
+                document.getElementById("username").textContent = username;
             }
             if (loginTime) {
-                const date = new Date(loginTime * 1000); // Converte o timestamp para data
-                document.getElementById("loginTime").textContent = date.toLocaleString('pt-BR'); // Formata a data em pt-BR
+                const date = new Date(parseInt(loginTime)); // Converte loginTime diretamente em milissegundos
+                document.getElementById("loginTime").textContent = date.toLocaleString('pt-BR');
             }
-            console.log('Nome do usuário:', username); // Mostra o nome do usuário no console
-            console.log('Data e hora de login:', loginTime); // Mostra a data/hora de login no console
+
+            console.log('Nome do usuário:', username);
+            console.log('Data e hora de login:', loginTime);
         });
+
     </script>
 
     <style>
