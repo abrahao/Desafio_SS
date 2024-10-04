@@ -9,20 +9,24 @@
 </head>
 
 <body>
-    <div class="container mt-5">
-        <h1>Login</h1>
-        <form id="loginForm">
-            <div class="mb-3">
-                <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card p-4 shadow" style="width: 22rem;">
+            <h1 class="text-center mb-4">Entrar</h1>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+                </div>
+                <div class="mb-3">
+                    <input type="password" name="password" class="form-control" placeholder="Senha" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Entrar</button>
+            </form>
+            <div id="errorMessage" class="alert alert-danger mt-3 d-none"></div>
+            <div class="text-center mt-4">
+                <img src="assets/img/logo.png" alt="Logo" class="img-fluid logo">
             </div>
-            <div class="mb-3">
-                <input type="password" name="password" class="form-control" placeholder="Senha" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Entrar</button>
-        </form>
-        <div id="errorMessage" class="alert alert-danger mt-3 d-none"></div>
+        </div>
     </div>
-
     <script>
         document.getElementById("loginForm").addEventListener("submit", function (event) {
             event.preventDefault(); // Impede o envio padrão do formulário
