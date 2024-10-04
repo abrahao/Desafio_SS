@@ -1,0 +1,21 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.logo {
+  width: 120px;
+}
+svg {
+  position: absolute;
+  right: 10px; /* Ajuste conforme necessário */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Ícones não interferem na interação com o input */
+}
+a {
+  text-decoration: none;
+}
