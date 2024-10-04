@@ -20,30 +20,37 @@
 
         function logout() {
             localStorage.removeItem("jwtToken");
-            localStorage.removeItem("username"); // Remove o nome do usuário do localStorage
             localStorage.removeItem("loginTime"); // Remove a data/hora de login
             window.location.href = "/login"; // Redireciona para a página de login
+        }
+
+        // Decodifica o JWT para pegar as informações do usuário
+        function decodeJWT(token) {
+            const base64Url = token.split('.')[1]; // Pega o payload
+            const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+            const jsonPayload = decodeURIComponent(atob(base64).split('').map(function (c) {
+                return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+            }).join(''));
+
+            return JSON.parse(jsonPayload);
         }
 
         // Verifica se o usuário está autenticado
         redirectToLoginIfNotAuthenticated();
 
         document.addEventListener("DOMContentLoaded", function () {
-            const username = localStorage.getItem("username");
+            const token = localStorage.getItem("jwtToken"); // Recupera o token do localStorage
             const loginTime = localStorage.getItem("loginTime");
 
-            if (username) {
-                document.getElementById("username").textContent = username;
+            if (token) {
+                const decodedToken = decodeJWT(token); // Decodifica o token JWT
+                document.getElementById("username").textContent = decodedToken.name; // Exibe o nome do usuário
             }
             if (loginTime) {
-                const date = new Date(parseInt(loginTime)); // Converte loginTime diretamente em milissegundos
-                document.getElementById("loginTime").textContent = date.toLocaleString('pt-BR');
+                const date = new Date(parseInt(loginTime)); // Converte o timestamp para data
+                document.getElementById("loginTime").textContent = date.toLocaleString('pt-BR'); // Formata a data em pt-BR
             }
-
-            console.log('Nome do usuário:', username);
-            console.log('Data e hora de login:', loginTime);
         });
-
     </script>
 
     <style>

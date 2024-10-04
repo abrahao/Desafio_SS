@@ -50,13 +50,10 @@
                         const tokenPayload = JSON.parse(atob(data.token.split(".")[1])); // Decodifica o token JWT
                         console.log("Payload decodificado:", tokenPayload);
 
-                        // Verifica se as propriedades existem antes de tentar acessá-las
-                        const username = tokenPayload.data?.name || "Usuário"; // Usando o operador de encadeamento opcional
                         const loginTime = Date.now(); // Usa a hora atual como timestamp
 
-                        // Armazena o token, o nome e a data/hora de login no localStorage
+                        // Armazena o token e a data/hora de login no localStorage
                         localStorage.setItem("jwtToken", data.token);
-                        localStorage.setItem("username", username); // Armazena o nome do usuário
                         localStorage.setItem("loginTime", loginTime); // Armazena a hora atual
 
                         // Redireciona para a página inicial
@@ -68,7 +65,12 @@
                         errorMessage.classList.remove("d-none");
                     }
                 })
-
+                .catch((error) => {
+                    console.error("Erro ao fazer login:", error);
+                    const errorMessage = document.getElementById("errorMessage");
+                    errorMessage.textContent = "Erro ao tentar fazer login. Tente novamente.";
+                    errorMessage.classList.remove("d-none");
+                });
         });
 
         function isAuthenticated() {
@@ -85,7 +87,6 @@
 
         function logout() {
             localStorage.removeItem("jwtToken");
-            localStorage.removeItem("username"); // Remove o nome do usuário do localStorage
             localStorage.removeItem("loginTime"); // Remove a data/hora de login
             window.location.href = "/login"; // Redireciona para a página de login
         }
