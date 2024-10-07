@@ -8,6 +8,20 @@ use PDOException;
 
 class UserController
 {
+
+    public function getAllUsers(): void
+    {
+        try {
+            // Busca todos os usuários
+            $users = User::findAll();
+            http_response_code(200);
+            echo json_encode($users);
+        } catch (PDOException $e) {
+            http_response_code(500); // Erro interno do servidor
+            echo json_encode(['error' => $e->getMessage()]);
+        }
+    }
+
     // Método de cadastro de usuario
     public function register(): void
     {
