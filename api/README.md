@@ -19,46 +19,55 @@ api/
 - PHP 7.4 or higher
 - Composer
 - PostgreSQL database
-  
+
 ## Installation
+
 1. Clone the repository and enter in the directory:
 
    ```bash
    git clone [clone the project]
    cd api
 
+   ```
+
 2. Install dependencies:
 
    ```bash
    composer install
+   ```
 
 ## Database
 
 Change system user directory access permission to postgres user:
 
-* `sudo chmod o+rx /home/<your-user>`
+- `sudo chmod o+rx /home/<your-user>`
 
 Access PostgreSQL as the `postgres` user:
 
-* `sudo -i -u postgres`
+- `sudo -i -u postgres`
 
 Navigate to the api directory:
-* `cd /home/<your-user>/path/to/api/`
+
+- `cd /home/<your-user>/path/to/api/`
 
 Restore the database from an SQL file:
 
-* `psql -U postgres -f abrahao.sql`
+- `psql -U postgres -f abrahao.sql`
 
 Exit to the user `postgresSQL`
-  * `exit`
+
+- `exit`
 
 ## Running the API
+
 You can run the API using a PHP built-in server. From the `api` directory, execute the following command:
 
-* `php -S localhost:8000`
+- `php -S localhost:8000`
 
-## Endpoints 
+## Endpoints
+
 ### User Registration
+
 - **URL:** `/register`
 - **Method:** `POST`
 - **Body:** JSON
@@ -69,6 +78,12 @@ You can run the API using a PHP built-in server. From the `api` directory, execu
     "email": "user@email.com",
     "password": "password"
   }
+  ```
+
+### List User
+
+- **URL:** `/list`
+- **Method:** `GET`
 
 ### User Login
 
@@ -81,6 +96,7 @@ You can run the API using a PHP built-in server. From the `api` directory, execu
     "email": "user@email.com",
     "password": "password"
   }
+  ```
 
 ### User Logout
 
@@ -93,7 +109,7 @@ You can run the API using a PHP built-in server. From the `api` directory, execu
 - **URL:** `/protected-endpoint`
 - **Method:** `GET`
 - **Authorization:** Bearer token required.
-  
+
 ### Token Validation
 
 - **URL:** `/validate-token`
