@@ -31,6 +31,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
+        <Route path="/register" /> {/* Não implementada*/}
         <Route path="/login" element={<Login onLogin={handleLogin} />} />
         <Route
           path="/home"
