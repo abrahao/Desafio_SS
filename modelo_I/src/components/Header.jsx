@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <header style={styles.header}>
-      <h1 style={styles.title}>Minha Aplicação</h1>
+      <h1 style={styles.title}>SS Digital</h1>
     </header>
   );
 };

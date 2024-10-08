@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
-import Footer from "../components/Footer";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -34,7 +33,6 @@ const Home = () => {
       <h1>Bem-vindo, {username}!</h1>
       <p>Você está logado desde {loginTime}</p> {/* Exibindo a data do login */}
       <Button text="Sair" onClick={handleLogout} />
-      <Footer />
     </div>
   );
 };
