@@ -22,11 +22,11 @@ class Utils
 
     // Gera um identificador único (hash) para uso geral.
 
-    public static function generateHash(): string
-    {
-        // Gera um hash usando openssl_random_pseudo_bytes e converte em um formato legível
-        return bin2hex(openssl_random_pseudo_bytes(16));
-    }
+    //public static function generateHash(): string
+    //{
+    // Gera um hash usando openssl_random_pseudo_bytes e converte em um formato legível
+    //  return bin2hex(openssl_random_pseudo_bytes(16));
+    //}
 
     // Função utilitária para limpar dados recebidos via JSON ou POST
     public static function sanitizeInput($data)
