@@ -36,7 +36,7 @@ const ProtectedRoute = ({ children }) => {
 
 // Validação de Props
 ProtectedRoute.propTypes = {
-  children: PropTypes.node.isRequired, // children deve ser um nó React
+  children: PropTypes.node.isRequired,
 };
 
 export default ProtectedRoute;
