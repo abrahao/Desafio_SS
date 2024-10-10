@@ -58,6 +58,7 @@ switch ($requestUri) {
         }
         break;
 
+    // Não implementado
     case '/protected-endpoint':
         // Protege a rota com o middleware JWT
         $jwtMiddlewareResponse = $jwtMiddleware->handle($_SERVER['REQUEST']);
