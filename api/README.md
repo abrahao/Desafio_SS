@@ -82,7 +82,7 @@ You can run the API using a PHP built-in server. From the `api` directory, execu
 
 ### List User
 
-- **URL:** `/list`
+- **URL:** `/users`
 - **Method:** `GET`
 
 ### User Login
