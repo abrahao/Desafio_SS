@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer style={styles.footer}>
       <p>
-        &copy; {new Date().getFullYear()} Minha Aplicação. Todos os direitos
+        &copy; {new Date().getFullYear()} SS Digital. Todos os direitos
         reservados.
       </p>
     </footer>
@@ -18,6 +18,7 @@ const styles = {
     position: "fixed",
     bottom: 0,
     width: "100%",
+    marginLeft: "-8px",
   },
 };
 

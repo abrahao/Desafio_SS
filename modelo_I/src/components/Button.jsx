@@ -43,7 +43,6 @@ const styles = {
     fontSize: "1rem",
     cursor: "pointer",
     transition: "background-color 0.3s",
-        width: "100px"
   },
   buttonHover: {
     backgroundColor: "#ff0e00",

@@ -87,6 +87,18 @@ switch ($requestUri) {
             echo json_encode(['message' => 'Método não permitido.']);
         }
         break;
+
+    // listar todos os usuários
+    case '/users':
+        if ($requestMethod === 'GET') {
+            $userController->getAllUsers();
+        } else {
+            http_response_code(405);
+            echo json_encode(['message' => 'Método não permitido.']);
+        }
+        break;
+
+
     default:
         http_response_code(404);
         echo json_encode(['message' => 'Endpoint não encontrado.']);

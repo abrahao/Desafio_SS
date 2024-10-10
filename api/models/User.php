@@ -49,4 +49,17 @@ class User
             throw new PDOException('Erro ao buscar o usuário: ' . $e->getMessage());
         }
     }
+
+    // lista todos os usuarios
+    public static function findAll(): array
+    {
+        try {
+            $db = (new Database())->connect();
+            $stmt = $db->query('SELECT * FROM users');
+            $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            return $users ?: [];
+        } catch (PDOException $e) {
+            throw new PDOException('Erro ao buscar os usuários: ' . $e->getMessage());
+        }
+    }
 }
